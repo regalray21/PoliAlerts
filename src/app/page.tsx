@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title:
     "PoliAlerts — Real-Time Government Monitoring and Intelligence for Canada",
   description:
-    "Monitor every legislative session, committee hearing, and regulatory filing across 7 Canadian jurisdictions. Keyword alerts in 60 seconds, AI briefings, 45+ document scrapers, media monitoring, and lobbying intelligence.",
+    "Monitor every legislative session, committee hearing, and regulatory filing across Canada. Keyword alerts in 60 seconds, AI briefings, 45+ document scrapers, media monitoring, and lobbying intelligence.",
 };
 
 export default function HomePage() {
@@ -113,9 +113,9 @@ export default function HomePage() {
             </p>
           </div>
           <div className="text-center">
-            <p className="text-3xl lg:text-4xl font-bold text-white-text">7</p>
+            <p className="text-3xl lg:text-4xl font-bold text-white-text">Every</p>
             <p className="text-sm text-white-text/80 mt-1">
-              Jurisdictions monitored
+              Province and territory covered
             </p>
           </div>
           <div className="text-center">
@@ -399,67 +399,27 @@ export default function HomePage() {
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 max-w-6xl mx-auto">
-          {/* Federal */}
-          <div className="border border-gray-text rounded-2xl p-6">
-            <h3 className="text-lg font-bold text-blue-button mb-3">Federal</h3>
-            <p className="text-sm text-clifford leading-6">
-              House of Commons, Senate, 12+ committee rooms, Canada Gazette,
-              LEGISinfo, Orders in Council, consultations
-            </p>
-          </div>
-
-          {/* Ontario */}
-          <div className="border border-gray-text rounded-2xl p-6">
-            <h3 className="text-lg font-bold text-blue-button mb-3">Ontario</h3>
-            <p className="text-sm text-clifford leading-6">
-              Legislature, committees, press conferences, Regulatory Registry,
-              Environmental Registry, Gazette
-            </p>
-          </div>
-
-          {/* Quebec */}
-          <div className="border border-gray-text rounded-2xl p-6">
-            <h3 className="text-lg font-bold text-blue-button mb-3">Quebec</h3>
-            <p className="text-sm text-clifford leading-6">
-              National Assembly, committees, Gazette, consultations
-            </p>
-          </div>
-
-          {/* British Columbia */}
-          <div className="border border-gray-text rounded-2xl p-6">
-            <h3 className="text-lg font-bold text-blue-button mb-3">
-              British Columbia
-            </h3>
-            <p className="text-sm text-clifford leading-6">
-              Legislature, Gazette, Orders in Council, engagements
-            </p>
-          </div>
-
-          {/* Alberta */}
-          <div className="border border-gray-text rounded-2xl p-6">
-            <h3 className="text-lg font-bold text-blue-button mb-3">Alberta</h3>
-            <p className="text-sm text-clifford leading-6">
-              Legislature, Gazette, Energy Regulator, environmental assessments
-            </p>
-          </div>
-
-          {/* Toronto */}
-          <div className="border border-gray-text rounded-2xl p-6">
-            <h3 className="text-lg font-bold text-blue-button mb-3">Toronto</h3>
-            <p className="text-sm text-clifford leading-6">
-              City Council, agendas, decisions, consultations
-            </p>
-          </div>
-
-          {/* York Region */}
-          <div className="border border-gray-text rounded-2xl p-6">
-            <h3 className="text-lg font-bold text-blue-button mb-3">
-              York Region
-            </h3>
-            <p className="text-sm text-clifford leading-6">
-              Regional council agendas
-            </p>
-          </div>
+          {[
+            { name: "Federal", desc: "House of Commons, Senate, 12+ committee rooms, Canada Gazette, LEGISinfo, Orders in Council" },
+            { name: "Ontario", desc: "Legislature, committees, press conferences, Regulatory Registry, Environmental Registry, Gazette" },
+            { name: "Quebec", desc: "National Assembly, committees, Gazette, consultations, bills" },
+            { name: "British Columbia", desc: "Legislature, Gazette, Orders in Council, public engagements" },
+            { name: "Alberta", desc: "Legislature, Gazette, Energy Regulator, environmental assessments" },
+            { name: "Saskatchewan", desc: "Legislature, press releases, Gazette, Orders in Council" },
+            { name: "Manitoba", desc: "Legislature, press releases, Gazette, Orders in Council" },
+            { name: "New Brunswick", desc: "Legislature, press releases, Royal Gazette" },
+            { name: "Nova Scotia", desc: "Legislature, press releases, Royal Gazette" },
+            { name: "Prince Edward Island", desc: "Legislature, press releases, Royal Gazette" },
+            { name: "Newfoundland & Labrador", desc: "Legislature, press releases, Gazette, Orders in Council" },
+            { name: "Northwest Territories", desc: "Legislative Assembly, press releases, Gazette" },
+            { name: "Yukon", desc: "Legislative Assembly, press releases, Gazette" },
+            { name: "Nunavut", desc: "Legislative Assembly, press releases, Gazette" },
+          ].map((j) => (
+            <div key={j.name} className="border border-gray-text rounded-2xl p-6">
+              <h3 className="text-lg font-bold text-blue-button mb-3">{j.name}</h3>
+              <p className="text-sm text-clifford leading-6">{j.desc}</p>
+            </div>
+          ))}
         </div>
 
         <div className="text-center mt-8">
@@ -467,7 +427,7 @@ export default function HomePage() {
             Plus 100+ municipalities across Canada
           </p>
           <Link
-            href="/features"
+            href="/coverage"
             className="inline-flex items-center gap-2 text-blue-button font-semibold text-base hover:text-blue-hover transition-colors duration-300"
           >
             <span className="w-2.5 h-2.5 bg-blue-button rounded-full" />

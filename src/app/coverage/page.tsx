@@ -3,14 +3,15 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "PoliAlerts Coverage | What We Monitor Across Canadian Government",
+    "PoliAlerts Coverage | Government Monitoring Across Every Province and Territory",
   description:
-    "Jurisdiction-by-jurisdiction breakdown of PoliAlerts government monitoring: federal, Ontario, Quebec, British Columbia, Alberta, Toronto, York Region, and 100+ municipalities across Canada.",
+    "Jurisdiction-by-jurisdiction breakdown of PoliAlerts government monitoring across all Canadian provinces and territories, plus 100+ municipalities.",
 };
 
 const jurisdictions = [
   {
     name: "Federal",
+    abbr: "CA",
     sources: [
       "House of Commons + Senate live sessions",
       "12+ committee rooms monitored simultaneously",
@@ -23,6 +24,7 @@ const jurisdictions = [
   },
   {
     name: "Ontario",
+    abbr: "ON",
     sources: [
       "Legislature, committees, press conferences, Question Period",
       "Ontario press releases (every 5 min)",
@@ -32,6 +34,7 @@ const jurisdictions = [
   },
   {
     name: "Quebec",
+    abbr: "QC",
     sources: [
       "National Assembly committees",
       "Press releases, bills, consultations",
@@ -40,6 +43,7 @@ const jurisdictions = [
   },
   {
     name: "British Columbia",
+    abbr: "BC",
     sources: [
       "Legislature sessions",
       "Press releases, Gazette, Orders in Council",
@@ -48,6 +52,7 @@ const jurisdictions = [
   },
   {
     name: "Alberta",
+    abbr: "AB",
     sources: [
       "Legislature sessions",
       "Press releases, Gazette",
@@ -57,7 +62,88 @@ const jurisdictions = [
     ],
   },
   {
+    name: "Saskatchewan",
+    abbr: "SK",
+    sources: [
+      "Legislature sessions",
+      "Press releases, Gazette",
+      "Orders in Council",
+    ],
+  },
+  {
+    name: "Manitoba",
+    abbr: "MB",
+    sources: [
+      "Legislature sessions",
+      "Press releases, Gazette",
+      "Orders in Council",
+    ],
+  },
+  {
+    name: "New Brunswick",
+    abbr: "NB",
+    sources: [
+      "Legislature sessions",
+      "Press releases, Royal Gazette",
+      "Orders in Council",
+    ],
+  },
+  {
+    name: "Nova Scotia",
+    abbr: "NS",
+    sources: [
+      "Legislature sessions",
+      "Press releases, Royal Gazette",
+      "Orders in Council",
+    ],
+  },
+  {
+    name: "Prince Edward Island",
+    abbr: "PE",
+    sources: [
+      "Legislature sessions",
+      "Press releases, Royal Gazette",
+    ],
+  },
+  {
+    name: "Newfoundland & Labrador",
+    abbr: "NL",
+    sources: [
+      "Legislature sessions",
+      "Press releases, Gazette",
+      "Orders in Council",
+    ],
+  },
+  {
+    name: "Northwest Territories",
+    abbr: "NT",
+    sources: [
+      "Legislative Assembly sessions",
+      "Press releases, Gazette",
+    ],
+  },
+  {
+    name: "Yukon",
+    abbr: "YT",
+    sources: [
+      "Legislative Assembly sessions",
+      "Press releases, Gazette",
+    ],
+  },
+  {
+    name: "Nunavut",
+    abbr: "NU",
+    sources: [
+      "Legislative Assembly sessions",
+      "Press releases, Gazette",
+    ],
+  },
+];
+
+const municipalities = [
+  {
     name: "Toronto",
+    abbr: "TO",
     sources: [
       "City Council live sessions",
       "Press releases (every 5 min)",
@@ -67,17 +153,17 @@ const jurisdictions = [
   },
   {
     name: "York Region",
+    abbr: "YR",
     sources: [
       "Regional council agendas",
     ],
   },
 ];
 
-function JurisdictionIcon({ name }: { name: string }) {
-  const label = name.charAt(0);
+function JurisdictionIcon({ abbr }: { abbr: string }) {
   return (
-    <div className="w-10 h-10 rounded-full bg-blue-button text-white-text flex items-center justify-center font-bold text-lg shrink-0">
-      {label}
+    <div className="w-10 h-10 rounded-full bg-blue-button text-white-text flex items-center justify-center font-bold text-sm shrink-0">
+      {abbr}
     </div>
   );
 }
@@ -99,8 +185,14 @@ export default function CoveragePage() {
         </p>
       </section>
 
-      {/* Jurisdiction Cards Grid */}
+      {/* Federal & Provincial */}
       <section className="px-5 lg:px-10 xl:px-24 py-12 md:py-16">
+        <h2 className="font-bold text-2xl md:text-[2rem] text-black-text mb-3">
+          Federal &amp; Provincial
+        </h2>
+        <p className="text-sm md:text-base text-clifford mb-8">
+          All 13 provinces and territories, plus federal Parliament.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {jurisdictions.map((jurisdiction) => (
             <div
@@ -108,13 +200,43 @@ export default function CoveragePage() {
               className="border border-gray-line rounded-xl p-8 flex flex-col"
             >
               <div className="flex items-center gap-3 mb-5">
-                <JurisdictionIcon name={jurisdiction.name} />
-                <h2 className="font-bold text-xl md:text-[1.375rem] text-black-text">
+                <JurisdictionIcon abbr={jurisdiction.abbr} />
+                <h3 className="font-bold text-xl md:text-[1.375rem] text-black-text">
                   {jurisdiction.name}
-                </h2>
+                </h3>
               </div>
               <ul className="list-disc list-outside pl-5 text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] space-y-2">
                 {jurisdiction.sources.map((source, index) => (
+                  <li key={index}>{source}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Municipal */}
+      <section className="px-5 lg:px-10 xl:px-24 py-12 md:py-16 bg-background-light-gray">
+        <h2 className="font-bold text-2xl md:text-[2rem] text-black-text mb-3">
+          Municipal
+        </h2>
+        <p className="text-sm md:text-base text-clifford mb-8">
+          City and regional councils across Canada. More added on request.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+          {municipalities.map((municipality) => (
+            <div
+              key={municipality.name}
+              className="border border-gray-line rounded-xl p-8 flex flex-col bg-white"
+            >
+              <div className="flex items-center gap-3 mb-5">
+                <JurisdictionIcon abbr={municipality.abbr} />
+                <h3 className="font-bold text-xl md:text-[1.375rem] text-black-text">
+                  {municipality.name}
+                </h3>
+              </div>
+              <ul className="list-disc list-outside pl-5 text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] space-y-2">
+                {municipality.sources.map((source, index) => (
                   <li key={index}>{source}</li>
                 ))}
               </ul>
