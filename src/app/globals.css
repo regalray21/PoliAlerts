@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-clifford: #515151;
+  --color-black-text: #0c0c0c;
+  --color-background-gray: #3A4151;
+  --color-background-light-gray: #ECECEC;
+  --color-blue-button: #2468cd;
+  --color-blue-hover: #3b4352;
+  --color-gray-text: #ececec;
+  --color-white-text: #ffffff;
+  --color-gray-line: #6f6f6f;
+  --color-warn: #d70404;
+  --color-bg-faqs: #ececec;
+  --font-manrope: "Manrope", sans-serif;
+}
+
+html {
+  font-family: "Manrope", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .mobileNav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 360px) {
+  .hideButton {
+    display: none !important;
+  }
+}
+
+@media (max-width: 330px) {
+  .changeFlex {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+}
+
+/* Swiper pagination overrides */
+.swiper-pagination-bullet {
+  background-color: #ececec !important;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #2468cd !important;
+}
