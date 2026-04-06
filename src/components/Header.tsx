@@ -234,6 +234,7 @@ function Header2Nav({
   menuRef,
   hamburgerRef,
   hidden,
+  isFixed = false,
 }: {
   pathname: string;
   variant: Variant;
@@ -242,12 +243,13 @@ function Header2Nav({
   menuRef: React.RefObject<HTMLDivElement | null>;
   hamburgerRef: React.RefObject<SVGSVGElement | null>;
   hidden?: boolean;
+  isFixed?: boolean;
 }) {
   return (
     <section
       className={`${
         hidden ? "hidden" : ""
-      } fixed w-full shadow-sm lg:mx-auto top-0 z-[60]`}
+      } ${isFixed ? "fixed" : ""} w-full shadow-sm lg:mx-auto top-0 z-[60]`}
     >
       <nav className="mobileNav flex lg:flex-none items-center justify-between w-full py-3 lg:py-0 bg-white-text">
         <div className="pl-5 lg:pl-10 xl:pl-24">
@@ -386,6 +388,7 @@ export default function Header() {
             menuRef={menuRef}
             hamburgerRef={hamburgerRef}
             hidden={!scrolledPast && typeof window !== "undefined" && window.innerWidth > 1024}
+            isFixed={true}
           />
         </div>
       </>
