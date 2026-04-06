@@ -8,19 +8,17 @@ import LockIcon from "./LockIcon";
 
 const NAV_LINKS = [
   { label: "Features", href: "/features" },
-  { label: "How it works", href: "/how-it-works" },
+  { label: "Coverage", href: "/coverage" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Who Is It For", href: "/who-is-it-for" },
 ];
 
 const SUBPAGE_PATHS = [
   "/features",
+  "/coverage",
   "/pricing",
-  "/how-it-works",
   "/who-is-it-for",
   "/faqs",
   "/demo-booking",
-  "/careers",
   "/support",
   "/newsletter",
 ];

@@ -90,10 +90,10 @@ function DesktopFooter() {
             </li>
             <li>
               <Link
-                href="/careers"
+                href="/coverage"
                 className="text-sm text-gray-text underline hover:no-underline"
               >
-                Careers
+                Coverage
               </Link>
             </li>
           </ul>
@@ -119,14 +119,6 @@ function DesktopFooter() {
                 className="text-sm text-gray-text underline hover:no-underline"
               >
                 Terms of Use
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/faqs"
-                className="text-sm text-gray-text underline hover:no-underline"
-              >
-                FAQ
               </Link>
             </li>
           </ul>
@@ -204,10 +196,10 @@ function MobileFooter() {
                   </li>
                   <li>
                     <Link
-                      href="/careers"
+                      href="/coverage"
                       className="text-xs leading-5 text-gray-text underline hover:no-underline"
                     >
-                      Careers
+                      Coverage
                     </Link>
                   </li>
                 </ul>
@@ -232,14 +224,6 @@ function MobileFooter() {
                       className="text-xs leading-5 text-gray-text underline hover:no-underline"
                     >
                       Terms of Use
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/faqs"
-                      className="text-xs leading-5 text-gray-text underline hover:no-underline"
-                    >
-                      FAQ
                     </Link>
                   </li>
                 </ul>

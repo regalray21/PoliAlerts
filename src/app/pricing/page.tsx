@@ -4,9 +4,9 @@ import HeroBanner from "@/components/HeroBanner";
 
 export const metadata: Metadata = {
   title:
-    "PoliAlerts Pricing | Affordable Poli Alerts for Government Monitoring Across Canada",
+    "PoliAlerts Pricing | Plans for Government Monitoring Across Canada",
   description:
-    "Check out PoliAlerts pricing plans for tracking government activities and transcripts in Toronto, Ontario, Ottawa, Alberta, and Vancouver. Get transparent pricing for real-time Poli Alerts and committee monitoring across Canada.",
+    "Choose a PoliAlerts plan for real-time government monitoring, keyword alerts, AI briefings, media tracking, and lobbying intelligence across 7 Canadian jurisdictions.",
 };
 
 function CheckIcon() {
@@ -60,8 +60,7 @@ export default function PricingPage() {
           Choose your plan
         </h2>
         <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem]">
-          Our plans include robust features designed to keep you informed and
-          ahead of the game. Explore your options below.
+          Every plan gives you access to the PoliAlerts dashboard and real government monitoring infrastructure — 45+ scrapers, live transcription, and full-text search. Pick the tier that matches how much coverage you need.
         </p>
 
         <div className="flex mt-10 justify-center lg:justify-start 2xl:justify-center">
@@ -79,49 +78,49 @@ export default function PricingPage() {
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Dashboard access
+                  Keyword alerts on transcripts and documents
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Up to 3 tracked keywords
+                  Daily digest emails
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  1 coverage area
+                  1 jurisdiction (federal, provincial, or municipal)
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  End-of-day email alerts
+                  Document monitoring from government scrapers
+                </p>
+              </section>
+              <section className="flex gap-3 items-center">
+                <CheckIcon />
+                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
+                  Full-text search archive
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <XIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Real-time email alerts
+                  Real-time alerts (within 60 seconds)
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <XIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Access to transcripts
+                  AI briefings
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <XIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Early access to new features
-                </p>
-              </section>
-              <section className="flex gap-3 items-center">
-                <CheckIcon />
-                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  1 recipient email address
+                  Media monitoring and reporter profiles
                 </p>
               </section>
             </header>
@@ -139,11 +138,38 @@ export default function PricingPage() {
                 <Link href="/demo-booking">Get started</Link>
               </button>
               <hr className="mt-3 border-gray-line" />
+              <p className="text-sm text-clifford font-semibold">
+                Everything in Budget, plus:
+              </p>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
-                <h2 className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Dashboard access
-                </h2>
+                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
+                  Daily AI briefings personalized to your interests
+                </p>
+              </section>
+              <section className="flex gap-3 items-center">
+                <CheckIcon />
+                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
+                  All 7 jurisdictions (federal, ON, QC, BC, AB, Toronto, York Region)
+                </p>
+              </section>
+              <section className="flex gap-3 items-center">
+                <CheckIcon />
+                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
+                  Media monitoring across 22+ Canadian news outlets
+                </p>
+              </section>
+              <section className="flex gap-3 items-center">
+                <CheckIcon />
+                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
+                  Government contacts database (MPs, staff, officials)
+                </p>
+              </section>
+              <section className="flex gap-3 items-center">
+                <CheckIcon />
+                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
+                  Real-time alerts within 60 seconds
+                </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
@@ -154,37 +180,7 @@ export default function PricingPage() {
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Unlimited coverage areas
-                </p>
-              </section>
-              <section className="flex gap-3 items-center">
-                <CheckIcon />
-                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  End-of-day email alerts
-                </p>
-              </section>
-              <section className="flex gap-3 items-center">
-                <CheckIcon />
-                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Real-time email alerts
-                </p>
-              </section>
-              <section className="flex gap-3 items-center">
-                <CheckIcon />
-                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Access to transcripts
-                </p>
-              </section>
-              <section className="flex gap-3 items-center">
-                <CheckIcon />
-                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Early access to new features
-                </p>
-              </section>
-              <section className="flex gap-3 items-center">
-                <CheckIcon />
-                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Unlimited recipient email addresses
+                  2,000+ reporter profiles with beat tracking
                 </p>
               </section>
             </header>
@@ -199,57 +195,59 @@ export default function PricingPage() {
                 <Link href="/demo-booking">Get started</Link>
               </button>
               <hr className="mt-3 border-gray-line" />
+              <p className="text-sm text-clifford font-semibold">
+                Everything in Pro, plus:
+              </p>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Dashboard access
-                </p>
-              </section>
-              <section className="flex gap-3 items-center">
-                <CheckIcon />
-                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Up to 10 tracked keywords
+                  Lobbying intelligence (registry filings, ethics disclosures)
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  2 coverage areas
+                  Stakeholder maps by topic and jurisdiction
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  End-of-day email alerts
-                </p>
-              </section>
-              <section className="flex gap-3 items-center">
-                <XIcon />
-                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Real-time email alerts
-                </p>
-              </section>
-              <section className="flex gap-3 items-center">
-                <XIcon />
-                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Access to transcripts
-                </p>
-              </section>
-              <section className="flex gap-3 items-center">
-                <XIcon />
-                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Early access to new features
+                  Priority support
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  2 recipient email addresses
+                  Custom scraper requests for additional sources
+                </p>
+              </section>
+              <section className="flex gap-3 items-center">
+                <CheckIcon />
+                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
+                  Company and firm lobbying profiles
+                </p>
+              </section>
+              <section className="flex gap-3 items-center">
+                <CheckIcon />
+                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
+                  Gift disclosure and ethics compliance tracking
+                </p>
+              </section>
+              <section className="flex gap-3 items-center">
+                <CheckIcon />
+                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
+                  Unlimited recipient email addresses
                 </p>
               </section>
             </header>
           </div>
         </div>
+
+        {/* Trial note */}
+        <p className="text-center text-sm md:text-base text-clifford mt-8 mb-12 font-semibold">
+          All plans include a 14-day free trial. No credit card required.
+        </p>
       </section>
     </>
   );

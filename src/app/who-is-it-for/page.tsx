@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import HeroBanner from "@/components/HeroBanner";
 
 export const metadata: Metadata = {
-  title: "Who is it For?",
+  title: "Who Is It For | PoliAlerts Use Cases",
   description:
-    "PoliAlerts empowers diverse professionals including government relations experts, lobbyists, communications executives, legal professionals, and more with real-time legislative tracking.",
+    "See how government relations firms, corporate public affairs teams, nonprofits, legal teams, and journalists use PoliAlerts to monitor government activity across Canada in real time.",
 };
 
 export default function WhoIsItForPage() {
@@ -14,17 +14,17 @@ export default function WhoIsItForPage() {
         desktopImage="/PoliAlerts/assets/whoIsItFor/close-up-of-shoes-walking-across-toronto-street.png"
         mobileImage="/PoliAlerts/assets/mobile-banners/polialerts-whoisitfor-mobile-banner.jpg"
         subtitle="Who is it for?"
-        title="Empowering diverse professionals"
+        title="Built for the people who need to know first"
         desktopTextWidth="2xl:w-[50%] w-[55%]"
       />
 
-      {/* Policy and advocacy professionals */}
+      {/* Government relations firms */}
       <section className="md:my-16 my-5">
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-0 gap-10">
           <div className="w-full">
             <div className="flex flex-col gap-6 md:gap-10 lg:-mt-2">
               <h2 className="font-bold text-3xl md:text-[2.125rem] md:leading-[3rem] leading:[2.625rem] text-black-text mb-5 px-5 lg:pl-10 xl:pl-24">
-                Policy and advocacy professionals:
+                Government relations firms
               </h2>
               <div className="w-[80%]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -38,41 +38,48 @@ export default function WhoIsItForPage() {
           <div className="xl:w-[95%] lg:w-full 2xl:w-[98%] w-full flex flex-col gap-7">
             <section>
               <div className="bg-background-light-gray rounded-xl w-[90%] p-8 md:p-10 mx-auto md:mx-0">
-                <h3 className="font-bold text-black-text text-[1.375rem] leading-[2.125rem] md:text-[1.625rem] md:leading-[2.375rem]">
-                  Government relations and lobbying
-                </h3>
-                <p className="mt-5 text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
-                  Stay informed and empowered to influence policy by receiving
-                  real-time updates on legislative discussions impacting your
-                  stakeholders. PoliAlerts arms you with the latest data,
-                  allowing you to act swiftly and strategically to support your
-                  policy goals.
+                <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
+                  Monitor client issues across multiple jurisdictions from one dashboard. Get alerted when a minister mentions your client&apos;s sector in committee.
                 </p>
-              </div>
-            </section>
-            <section>
-              <div className="bg-background-light-gray rounded-xl p-8 md:p-10 w-[90%] mx-auto md:mx-0">
-                <h3 className="font-bold text-black-text text-[1.375rem] leading-[2.125rem] md:text-[1.625rem] md:leading-[2.375rem]">
-                  Nonprofit and advocacy groups
-                </h3>
-                <p className="mt-5 text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
-                  Keep track of policy changes that affect your causes. Leverage
-                  our up-to-date legislative information to mobilize your
-                  supporters and campaign effectively for your causes.
-                </p>
+                <ul className="mt-6 flex flex-col gap-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Track keywords across 7 jurisdictions simultaneously — federal, Ontario, Quebec, BC, Alberta, Toronto, and York Region
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Receive alerts within 60 seconds of a keyword being spoken in a legislative session or published in a government document
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Wake up to AI briefings that summarize everything relevant to your clients from the previous day
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Look up direct contact info for MPs, political staff, and ministerial offices in one searchable database
+                    </p>
+                  </li>
+                </ul>
               </div>
             </section>
           </div>
         </div>
       </section>
 
-      {/* Communication and Media */}
+      {/* Corporate public affairs */}
       <section className="md:my-16 my-5 md:py-16 py-10 bg-background-light-gray">
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-0 gap-10">
           <div className="w-full">
             <div className="flex flex-col gap-6 md:gap-10 lg:-mt-1">
               <h2 className="font-bold text-3xl md:text-[2.125rem] md:leading-[3rem] leading:[2.625rem] text-black-text mb-5 px-5 lg:pl-10 xl:pl-24">
-                Communications and media:
+                Corporate public affairs
               </h2>
               <div className="w-[80%]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -86,39 +93,48 @@ export default function WhoIsItForPage() {
           <div className="xl:w-[95%] lg:w-full 2xl:w-[98%] w-full flex flex-col gap-7">
             <section>
               <div className="bg-white rounded-xl p-8 md:p-10 w-[90%] mx-auto md:mx-0">
-                <h3 className="font-bold text-black-text text-[1.375rem] leading-[2.125rem] md:text-[1.625rem] md:leading-[2.375rem]">
-                  Communications executives
-                </h3>
-                <p className="mt-5 text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
-                  Monitor legislative discussions to protect and manage your
-                  organization or brand&apos;s reputation. Enhance your
-                  background knowledge and strategic understanding with our
-                  timely alerts.
+                <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
+                  Know about regulatory changes the day they&apos;re proposed. Track which reporters are covering your industry and what they&apos;re writing.
                 </p>
-              </div>
-            </section>
-            <section>
-              <div className="bg-white rounded-xl p-8 md:p-10 w-[90%] mx-auto md:mx-0">
-                <h3 className="font-bold text-black-text text-[1.375rem] leading-[2.125rem] md:text-[1.625rem] md:leading-[2.375rem]">
-                  Media and journalists
-                </h3>
-                <p className="mt-5 text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
-                  Receive real-time alerts that enable you to report accurately
-                  and stay ahead of the news cycle.
-                </p>
+                <ul className="mt-6 flex flex-col gap-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      45+ automated scrapers check sources like the Canada Gazette, Regulatory Registry, and Environmental Registry every 5 to 60 minutes
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Media monitoring covers 22+ Canadian news outlets with reporter profiles, beat tracking, and story clustering
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      See which organizations are lobbying on your regulatory topics and who they are targeting in government
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Configure daily digest or real-time alerts per feed, so your team gets the right information at the right frequency
+                    </p>
+                  </li>
+                </ul>
               </div>
             </section>
           </div>
         </div>
       </section>
 
-      {/* Legal and Compliance */}
+      {/* Nonprofits & advocacy */}
       <section className="md:my-16 my-5">
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-0 gap-10">
           <div className="w-full">
             <div className="flex flex-col gap-6 md:gap-10 lg:-mt-1">
               <h2 className="font-bold text-3xl md:text-[2.125rem] md:leading-[3rem] leading:[2.625rem] text-black-text mb-5 px-5 lg:pl-10 xl:pl-24">
-                Legal and compliance:
+                Nonprofits and advocacy groups
               </h2>
               <div className="w-[80%]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -132,39 +148,48 @@ export default function WhoIsItForPage() {
           <div className="xl:w-[95%] lg:w-full 2xl:w-[98%] w-full flex flex-col gap-7">
             <section>
               <div className="bg-background-light-gray rounded-xl p-8 md:p-10 w-[90%] mx-auto md:mx-0">
-                <h3 className="font-bold text-black-text text-[1.375rem] leading-[2.125rem] md:text-[1.625rem] md:leading-[2.375rem]">
-                  Legal professionals
-                </h3>
-                <p className="mt-5 text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
-                  Keep pace with regulatory changes and legislative
-                  developments that impact your practice areas, delivering the
-                  most current and accurate legal advice to your clients.
+                <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
+                  Track bills, committee discussions, and lobbying activity on the issues you champion. See who has access to decision-makers on your topics.
                 </p>
-              </div>
-            </section>
-            <section>
-              <div className="bg-background-light-gray rounded-xl p-8 md:p-10 w-[90%] mx-auto md:mx-0">
-                <h3 className="font-bold text-black-text text-[1.375rem] leading-[2.125rem] md:text-[1.625rem] md:leading-[2.375rem]">
-                  Corporations and business leaders
-                </h3>
-                <p className="mt-5 text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
-                  Monitor regulatory changes that affect your industry. Make
-                  informed business decisions and stay compliant with the latest
-                  legislative developments.
-                </p>
+                <ul className="mt-6 flex flex-col gap-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Monitor bill introductions and readings through LEGISinfo and provincial bill trackers, updated every 15 minutes
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Use stakeholder maps to see which organizations and lobbyists are active on your issues and who in government they are meeting
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Live transcription of committee hearings means you know what was said minutes after it happens, not days later via Hansard
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Track government consultations across federal, Ontario, BC, Alberta, Quebec, and Toronto as they open and close
+                    </p>
+                  </li>
+                </ul>
               </div>
             </section>
           </div>
         </div>
       </section>
 
-      {/* Research and Analysis */}
-      <section className="md:mt-12 mt-5 md:py-16 py-10 bg-background-light-gray">
+      {/* Legal teams */}
+      <section className="md:my-16 my-5 md:py-16 py-10 bg-background-light-gray">
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-0 gap-10">
           <div className="w-full">
             <div className="flex flex-col gap-6 md:gap-10 lg:-mt-1">
               <h2 className="font-bold text-3xl md:text-[2.125rem] md:leading-[3rem] leading:[2.625rem] text-black-text mb-5 px-5 lg:pl-10 xl:pl-24">
-                Research and analysis:
+                Legal teams
               </h2>
               <div className="w-[80%]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -178,38 +203,84 @@ export default function WhoIsItForPage() {
           <div className="xl:w-[95%] lg:w-full 2xl:w-[98%] w-full flex flex-col gap-7">
             <section>
               <div className="bg-white rounded-xl p-8 md:p-10 w-[90%] mx-auto md:mx-0">
-                <h3 className="font-bold text-black-text text-[1.375rem] leading-[2.125rem] md:text-[1.625rem] md:leading-[2.375rem]">
-                  Public affairs and policy analysts
-                </h3>
-                <p className="mt-5 text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
-                  Analyze policy changes and their implications with real-time
-                  data. Provide accurate and relevant policy insights to
-                  stakeholders.
+                <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
+                  Full-text searchable archive of every legislative proceeding. Due diligence on lobbying registrations and stakeholder relationships.
                 </p>
+                <ul className="mt-6 flex flex-col gap-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Search every transcript segment and government document ever captured, filtered by region, date range, and source type
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Browse federal lobbying registrations and ethics disclosures, including gift reports to public office holders
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Track Orders in Council, Gazette publications, and regulatory filings across multiple jurisdictions
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Review company and firm lobbying profiles to see which subjects they are active on and which officials they are targeting
+                    </p>
+                  </li>
+                </ul>
               </div>
             </section>
-            <section>
-              <div className="bg-white rounded-xl p-8 md:p-10 w-[90%] mx-auto md:mx-0">
-                <h3 className="font-bold text-black-text text-[1.375rem] leading-[2.125rem] md:text-[1.625rem] md:leading-[2.375rem]">
-                  Academic and research institutions
-                </h3>
-                <p className="mt-5 text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
-                  Access comprehensive legislative data for research and
-                  academic studies. Stay informed on policy trends and
-                  legislative developments.
-                </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Journalists */}
+      <section className="md:mt-12 mt-5 md:pb-16 pb-10">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-0 gap-10">
+          <div className="w-full">
+            <div className="flex flex-col gap-6 md:gap-10 lg:-mt-1">
+              <h2 className="font-bold text-3xl md:text-[2.125rem] md:leading-[3rem] leading:[2.625rem] text-black-text mb-5 px-5 lg:pl-10 xl:pl-24">
+                Journalists
+              </h2>
+              <div className="w-[80%]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/PoliAlerts/assets/whoIsItFor/two-colleagues-working-in-modern-space.png"
+                  alt="journalist-working"
+                />
               </div>
-            </section>
+            </div>
+          </div>
+          <div className="xl:w-[95%] lg:w-full 2xl:w-[98%] w-full flex flex-col gap-7">
             <section>
-              <div className="bg-white rounded-xl p-8 md:p-10 w-[90%] mx-auto md:mx-0">
-                <h3 className="font-bold text-black-text text-[1.375rem] leading-[2.125rem] md:text-[1.625rem] md:leading-[2.375rem]">
-                  Consulting firms
-                </h3>
-                <p className="mt-5 text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
-                  Provide clients with up-to-date legislative insights. Enhance
-                  your advisory services with real-time data and comprehensive
-                  analysis.
+              <div className="bg-background-light-gray rounded-xl p-8 md:p-10 w-[90%] mx-auto md:mx-0">
+                <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
+                  Track what government is saying in real-time. Find out which officials are being lobbied on your beat.
                 </p>
+                <ul className="mt-6 flex flex-col gap-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Live transcription of House of Commons, 12+ federal committee rooms, provincial legislatures, and press conferences
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Search lobbying registrations by subject, company, or target official to see who has access on the topics you cover
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
+                    <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
+                      Set keyword alerts for breaking topics and get notified the moment they come up in any legislative session or government publication
+                    </p>
+                  </li>
+                </ul>
               </div>
             </section>
           </div>
