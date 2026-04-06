@@ -47,8 +47,8 @@ export default function PricingPage() {
   return (
     <>
       <HeroBanner
-        desktopImage="/assets/pricing/three-professionals-walking-in-business-district-by-water.png"
-        mobileImage="/assets/mobile-banners/polialerts-pricing-mobile-banner.jpg"
+        desktopImage="/PoliAlerts/assets/pricing/three-professionals-walking-in-business-district-by-water.png"
+        mobileImage="/PoliAlerts/assets/mobile-banners/polialerts-pricing-mobile-banner.jpg"
         subtitle="PLANS"
         title="Pricing"
         desktopTextWidth="2xl:w-[45%] w-[50%]"

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description:
     "PoliAlerts offers cutting-edge dialogue tracking and monitoring of government hearings in real-time. Get instant email alerts and stay informed on the issues that matter most across Canada, the US, UK, and Australia.",
   icons: {
-    icon: "/assets/home/favicon-polialerts.png",
+    icon: "/PoliAlerts/assets/home/favicon-polialerts.png",
   },
 };
 

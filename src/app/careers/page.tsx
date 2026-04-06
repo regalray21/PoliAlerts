@@ -12,8 +12,8 @@ export default function CareersPage() {
   return (
     <>
       <HeroBanner
-        desktopImage="/assets/bookademo/toronto-city-hall-buildings-from-below.png"
-        mobileImage="/assets/mobile-banners/polialerts-buildings-mobile-banner.jpg"
+        desktopImage="/PoliAlerts/assets/bookademo/toronto-city-hall-buildings-from-below.png"
+        mobileImage="/PoliAlerts/assets/mobile-banners/polialerts-buildings-mobile-banner.jpg"
         subtitle="CAREERS"
         title="Join the PoliAlerts Team"
         desktopTextWidth="2xl:w-[55%] w-[60%]"

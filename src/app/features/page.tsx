@@ -141,8 +141,8 @@ export default function FeaturesPage() {
   return (
     <>
       <HeroBanner
-        desktopImage="/assets/features/skyscraper-windows-at-night.png"
-        mobileImage="/assets/mobile-banners/polialerts-features-mobile-banner.jpg"
+        desktopImage="/PoliAlerts/assets/features/skyscraper-windows-at-night.png"
+        mobileImage="/PoliAlerts/assets/mobile-banners/polialerts-features-mobile-banner.jpg"
         subtitle="Features"
         title="Monitor, analyze, act with precision"
       />
@@ -184,7 +184,7 @@ export default function FeaturesPage() {
       <section className="rounded-full md:block hidden my-16 mx-5 lg:mx-10 xl:mx-24">
         <div className="w-full relative">
           <Image
-            src="/assets/features/two-professional-men-looking-at-phone.png"
+            src="/PoliAlerts/assets/features/two-professional-men-looking-at-phone.png"
             className="w-full h-full"
             alt="two-professional-men-looking-at-phone"
             width={1400}
@@ -208,7 +208,7 @@ export default function FeaturesPage() {
       <section className="md:hidden block pr-3 my-10">
         <div className="w-full relative">
           <Image
-            src="/assets/features/two-professional-men-looking-at-phone-mobile.png"
+            src="/PoliAlerts/assets/features/two-professional-men-looking-at-phone-mobile.png"
             className="w-full h-full"
             alt="two-professional-men-looking-at-phone"
             width={800}

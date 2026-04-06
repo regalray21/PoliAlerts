@@ -11,8 +11,8 @@ export default function WhoIsItForPage() {
   return (
     <>
       <HeroBanner
-        desktopImage="/assets/whoIsItFor/close-up-of-shoes-walking-across-toronto-street.png"
-        mobileImage="/assets/mobile-banners/polialerts-whoisitfor-mobile-banner.jpg"
+        desktopImage="/PoliAlerts/assets/whoIsItFor/close-up-of-shoes-walking-across-toronto-street.png"
+        mobileImage="/PoliAlerts/assets/mobile-banners/polialerts-whoisitfor-mobile-banner.jpg"
         subtitle="Who is it for?"
         title="Empowering diverse professionals"
         desktopTextWidth="2xl:w-[50%] w-[55%]"
@@ -29,7 +29,7 @@ export default function WhoIsItForPage() {
               <div className="w-[80%]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/whoIsItFor/two-colleagues-working-in-modern-space.png"
+                  src="/PoliAlerts/assets/whoIsItFor/two-colleagues-working-in-modern-space.png"
                   alt="two-colleagues-working-in-modern-space"
                 />
               </div>
@@ -77,7 +77,7 @@ export default function WhoIsItForPage() {
               <div className="w-[80%]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/whoIsItFor/professional-man-in-office-using-phone.png"
+                  src="/PoliAlerts/assets/whoIsItFor/professional-man-in-office-using-phone.png"
                   alt="professional-man-in-office-using-phone"
                 />
               </div>
@@ -123,7 +123,7 @@ export default function WhoIsItForPage() {
               <div className="w-[80%]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/whoIsItFor/professional-woman-with-laptop-walking-in-office-hallway.png"
+                  src="/PoliAlerts/assets/whoIsItFor/professional-woman-with-laptop-walking-in-office-hallway.png"
                   alt="professional-woman-with-laptop-walking-in-office-hallway"
                 />
               </div>
@@ -169,7 +169,7 @@ export default function WhoIsItForPage() {
               <div className="w-[80%]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/whoIsItFor/close-up-of-hands-working-on-laptop.png"
+                  src="/PoliAlerts/assets/whoIsItFor/close-up-of-hands-working-on-laptop.png"
                   alt="close-up-of-hands-working-on-laptop"
                 />
               </div>

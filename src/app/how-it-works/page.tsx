@@ -13,8 +13,8 @@ export default function HowItWorksPage() {
   return (
     <>
       <HeroBanner
-        desktopImage="/assets/howitworks/close-up-of-hands-working-on-laptop.png"
-        mobileImage="/assets/mobile-banners/polialerts-howitworks-mobile-banner.jpg"
+        desktopImage="/PoliAlerts/assets/howitworks/close-up-of-hands-working-on-laptop.png"
+        mobileImage="/PoliAlerts/assets/mobile-banners/polialerts-howitworks-mobile-banner.jpg"
         subtitle="HOW IT WORKS"
         title="Government intelligence at your fingertips"
         desktopTextWidth="2xl:w-[55%] w-[60%]"
@@ -39,7 +39,7 @@ export default function HowItWorksPage() {
               <div className="w-[80%] mt-4">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/howitworks/womans-hands-typing-on-laptop.png"
+                  src="/PoliAlerts/assets/howitworks/womans-hands-typing-on-laptop.png"
                   alt="womans-hands-typing-on-laptop"
                 />
               </div>

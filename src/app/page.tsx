@@ -16,7 +16,7 @@ export default function HomePage() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="object-cover w-full h-full"
-          src="/assets/home/old-city-hall-toronto-buildlings.png"
+          src="/PoliAlerts/assets/home/old-city-hall-toronto-buildlings.png"
           alt="old-city-hall-toronto-buildlings"
         />
       </div>
@@ -26,7 +26,7 @@ export default function HomePage() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="h-full w-full object-cover"
-          src="/assets/home/Hero-mobile.png"
+          src="/PoliAlerts/assets/home/Hero-mobile.png"
           alt="old-city-hall-toronto-buildlings"
         />
 
@@ -61,7 +61,7 @@ export default function HomePage() {
           <div className="rounded-r-full w-[90%]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/home/crowd-moving-in-government-building.png"
+              src="/PoliAlerts/assets/home/crowd-moving-in-government-building.png"
               alt="crowd-moving-in-government-building"
             />
           </div>
@@ -223,7 +223,7 @@ export default function HomePage() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     className="2xl:w-[86%] w-[83%] h-[80%]"
-                    src="/assets/home/rows-of-chairs-in-legislature.png"
+                    src="/PoliAlerts/assets/home/rows-of-chairs-in-legislature.png"
                     alt="rows-of-chairs-in-legislature"
                   />
                 </div>
@@ -270,7 +270,7 @@ export default function HomePage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className="z-10 h-[70rem] object-cover w-full"
-              src="/assets/home/architectural-close-up-view-of-building.png"
+              src="/PoliAlerts/assets/home/architectural-close-up-view-of-building.png"
               alt="architectural-close-up-view-of-building"
             />
             <div className="left-[40%] my-4 absolute 2xl:top-[55%] xl:top-[55%] lg:top-[60%] z-50">
@@ -328,7 +328,7 @@ export default function HomePage() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="my-4 w-[90%] h-[90%] md:w-[50%] md:h-[50%] mx-auto"
-            src="/assets/home/rows-of-chairs-in-legislature.png"
+            src="/PoliAlerts/assets/home/rows-of-chairs-in-legislature.png"
             alt="rows-of-chairs-in-legislature"
           />
 
@@ -370,7 +370,7 @@ export default function HomePage() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="h-full w-full object-cover"
-            src="/assets/home/Bottom-mobile.png"
+            src="/PoliAlerts/assets/home/Bottom-mobile.png"
             alt="old-city-hall-toronto-buildlings"
           />
 

@@ -98,8 +98,8 @@ export default function FaqsPage() {
   return (
     <>
       <HeroBanner
-        desktopImage="/assets/faq/FAQheroimage.png"
-        mobileImage="/assets/mobile-banners/polialerts-faq-mobile-banner.jpg"
+        desktopImage="/PoliAlerts/assets/faq/FAQheroimage.png"
+        mobileImage="/PoliAlerts/assets/mobile-banners/polialerts-faq-mobile-banner.jpg"
         subtitle="ABOUT POLIALERTS"
         title="Frequently asked questions"
         desktopTextWidth="2xl:w-[45%] w-[50%]"
