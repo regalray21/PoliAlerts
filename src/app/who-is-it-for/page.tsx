@@ -39,31 +39,31 @@ export default function WhoIsItForPage() {
             <section>
               <div className="bg-background-light-gray rounded-xl w-[90%] p-8 md:p-10 mx-auto md:mx-0">
                 <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
-                  Monitor client issues across multiple jurisdictions from one dashboard. Get alerted when a minister mentions your client&apos;s sector in committee.
+                  Your clients expect you to know first. PoliAlerts makes sure you do.
                 </p>
                 <ul className="mt-6 flex flex-col gap-4">
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Track keywords across 7 jurisdictions simultaneously — federal, Ontario, Quebec, BC, Alberta, Toronto, and York Region
+                      Track every client issue across the country from one dashboard
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Receive alerts within 60 seconds of a keyword being spoken in a legislative session or published in a government document
+                      Get the alert before the reporter calls asking for comment
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Wake up to AI briefings that summarize everything relevant to your clients from the previous day
+                      Brief your clients with AI-written summaries instead of spending your morning reading Hansard
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Look up direct contact info for MPs, political staff, and ministerial offices in one searchable database
+                      Look up direct contact info for MPs, political staff, and ministerial offices in one searchable directory
                     </p>
                   </li>
                 </ul>
@@ -94,31 +94,31 @@ export default function WhoIsItForPage() {
             <section>
               <div className="bg-white rounded-xl p-8 md:p-10 w-[90%] mx-auto md:mx-0">
                 <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
-                  Know about regulatory changes the day they&apos;re proposed. Track which reporters are covering your industry and what they&apos;re writing.
+                  Regulatory surprises are expensive. PoliAlerts makes sure there aren&apos;t any.
                 </p>
                 <ul className="mt-6 flex flex-col gap-4">
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      45+ automated scrapers check sources like the Canada Gazette, Regulatory Registry, and Environmental Registry every 5 to 60 minutes
+                      Know about regulatory changes the day they&apos;re proposed, not when they&apos;re already in force
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Media monitoring covers 22+ Canadian news outlets with reporter profiles, beat tracking, and story clustering
+                      See which reporters are writing about your industry before the story runs
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      See which organizations are lobbying on your regulatory topics and who they are targeting in government
+                      Track lobbying activity on your regulatory files and see who else is at the table
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Configure daily digest or real-time alerts per feed, so your team gets the right information at the right frequency
+                      Wake up to a morning briefing that tells your team exactly what changed overnight
                     </p>
                   </li>
                 </ul>
@@ -149,31 +149,31 @@ export default function WhoIsItForPage() {
             <section>
               <div className="bg-background-light-gray rounded-xl p-8 md:p-10 w-[90%] mx-auto md:mx-0">
                 <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
-                  Track bills, committee discussions, and lobbying activity on the issues you champion. See who has access to decision-makers on your topics.
+                  You can&apos;t fight for your cause if you don&apos;t know what&apos;s happening. PoliAlerts keeps you in the room even when you&apos;re not.
                 </p>
                 <ul className="mt-6 flex flex-col gap-4">
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Monitor bill introductions and readings through LEGISinfo and provincial bill trackers, updated every 15 minutes
+                      Follow every bill that touches your mission from introduction to royal assent
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Use stakeholder maps to see which organizations and lobbyists are active on your issues and who in government they are meeting
+                      See who&apos;s lobbying against your position and who they&apos;re meeting with
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Live transcription of committee hearings means you know what was said minutes after it happens, not days later via Hansard
+                      Get notified when your issues come up in committee — not two weeks later when you stumble across it
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Track government consultations across federal, Ontario, BC, Alberta, Quebec, and Toronto as they open and close
+                      Track government consultations as they open so you never miss a window to have your voice heard
                     </p>
                   </li>
                 </ul>
@@ -204,31 +204,31 @@ export default function WhoIsItForPage() {
             <section>
               <div className="bg-white rounded-xl p-8 md:p-10 w-[90%] mx-auto md:mx-0">
                 <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
-                  Full-text searchable archive of every legislative proceeding. Due diligence on lobbying registrations and stakeholder relationships.
+                  The legislative record is your evidence base. PoliAlerts makes it searchable, complete, and instant.
                 </p>
                 <ul className="mt-6 flex flex-col gap-4">
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Search every transcript segment and government document ever captured, filtered by region, date range, and source type
+                      Search years of legislative proceedings in seconds
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Browse federal lobbying registrations and ethics disclosures, including gift reports to public office holders
+                      Run due diligence on lobbying relationships and ethics compliance
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Track Orders in Council, Gazette publications, and regulatory filings across multiple jurisdictions
+                      Track regulatory changes across every jurisdiction your clients operate in
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Review company and firm lobbying profiles to see which subjects they are active on and which officials they are targeting
+                      Review company and firm lobbying profiles to understand who is active on the issues that matter to your cases
                     </p>
                   </li>
                 </ul>
@@ -259,25 +259,25 @@ export default function WhoIsItForPage() {
             <section>
               <div className="bg-background-light-gray rounded-xl p-8 md:p-10 w-[90%] mx-auto md:mx-0">
                 <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7 font-semibold">
-                  Track what government is saying in real-time. Find out which officials are being lobbied on your beat.
+                  The story is happening right now. PoliAlerts makes sure you&apos;re the first to know.
                 </p>
                 <ul className="mt-6 flex flex-col gap-4">
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Live transcription of House of Commons, 12+ federal committee rooms, provincial legislatures, and press conferences
+                      Get live transcripts from every committee room while you&apos;re still writing the lede
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Search lobbying registrations by subject, company, or target official to see who has access on the topics you cover
+                      See the lobbying relationships behind the stories you&apos;re chasing
                     </p>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-blue-button font-bold mt-0.5">&#8226;</span>
                     <p className="text-sm text-clifford leading-[1.625rem] md:text-base md:leading-7">
-                      Set keyword alerts for breaking topics and get notified the moment they come up in any legislative session or government publication
+                      Set alerts for breaking political topics and get notified the moment they surface in any session or government publication
                     </p>
                   </li>
                 </ul>

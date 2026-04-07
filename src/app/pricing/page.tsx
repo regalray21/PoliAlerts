@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title:
     "PoliAlerts Pricing | Plans for Government Monitoring Across Canada",
   description:
-    "Choose a PoliAlerts plan for real-time government monitoring, keyword alerts, AI briefings, media tracking, and lobbying intelligence across 7 Canadian jurisdictions.",
+    "Choose a PoliAlerts plan for real-time government monitoring, keyword alerts, AI briefings, media tracking, and lobbying intelligence across Canada.",
 };
 
 function CheckIcon() {
@@ -60,7 +60,7 @@ export default function PricingPage() {
           Choose your plan
         </h2>
         <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem]">
-          Every plan gives you access to the PoliAlerts dashboard and real government monitoring infrastructure — 45+ scrapers, live transcription, and full-text search. Pick the tier that matches how much coverage you need.
+          Pick the plan that fits how your team works. Start with a free trial and upgrade when you&apos;re ready.
         </p>
 
         <div className="flex mt-10 justify-center lg:justify-start 2xl:justify-center">
@@ -78,49 +78,49 @@ export default function PricingPage() {
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Keyword alerts on transcripts and documents
+                  Keyword alerts
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Daily digest emails
+                  Daily digest
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  1 jurisdiction (federal, provincial, or municipal)
+                  Single jurisdiction
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Document monitoring from government scrapers
+                  Document monitoring
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Full-text search archive
+                  Search archive
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <XIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Real-time alerts (within 60 seconds)
+                  Real-time alerts
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <XIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  AI briefings
+                  AI morning briefings
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <XIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Media monitoring and reporter profiles
+                  Media monitoring with reporter profiles
                 </p>
               </section>
             </header>
@@ -144,43 +144,37 @@ export default function PricingPage() {
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Daily AI briefings personalized to your interests
+                  AI morning briefings
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  All 7 jurisdictions (federal, ON, QC, BC, AB, Toronto, York Region)
+                  All provinces and territories
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Media monitoring across 22+ Canadian news outlets
+                  Media monitoring with reporter profiles
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Government contacts database (MPs, staff, officials)
+                  Government contacts directory
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Real-time alerts within 60 seconds
+                  Real-time alerts
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Unlimited tracked keywords
-                </p>
-              </section>
-              <section className="flex gap-3 items-center">
-                <CheckIcon />
-                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  2,000+ reporter profiles with beat tracking
+                  Unlimited keywords
                 </p>
               </section>
             </header>
@@ -201,13 +195,13 @@ export default function PricingPage() {
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Lobbying intelligence (registry filings, ethics disclosures)
+                  Lobbying intelligence
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Stakeholder maps by topic and jurisdiction
+                  Stakeholder mapping
                 </p>
               </section>
               <section className="flex gap-3 items-center">
@@ -219,25 +213,19 @@ export default function PricingPage() {
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Custom scraper requests for additional sources
+                  Custom source requests
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Company and firm lobbying profiles
+                  Company and firm profiles
                 </p>
               </section>
               <section className="flex gap-3 items-center">
                 <CheckIcon />
                 <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Gift disclosure and ethics compliance tracking
-                </p>
-              </section>
-              <section className="flex gap-3 items-center">
-                <CheckIcon />
-                <p className="ml-3 font-bold text-xl leading-[1.875rem] md:leading-[2.375rem] text-black-text">
-                  Unlimited recipient email addresses
+                  Ethics and gift tracking
                 </p>
               </section>
             </header>

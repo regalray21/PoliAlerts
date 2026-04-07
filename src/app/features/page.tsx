@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title:
     "PoliAlerts Features | Real-Time Government Monitoring for Canada",
   description:
-    "Live session transcription, keyword alerts, AI briefings, document intelligence, media monitoring, government contacts, and lobbying data — all in one platform covering federal, provincial, and municipal government across Canada.",
+    "Live session transcription, keyword alerts, AI briefings, document monitoring, media intelligence, government contacts, and lobbying data — all in one platform covering every level of Canadian government.",
 };
 
 export default function FeaturesPage() {
@@ -20,220 +20,92 @@ export default function FeaturesPage() {
         title="Everything you need to monitor Canadian government"
       />
 
-      {/* Module 1: Live Session Monitoring & Alerts */}
-      <section className="px-5 lg:px-10 xl:px-24 py-12 md:py-16">
+      {/* 1. Live Transcription */}
+      <section className="px-5 lg:px-10 xl:px-24 py-16 md:py-20">
         <h2 className="font-bold text-3xl md:text-[2.125rem] md:leading-[3rem] leading-[2.625rem] text-black-text mb-5">
-          Live session monitoring and alerts
+          Never miss what&apos;s said in session
         </h2>
-        <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] mb-6">
-          PoliAlerts transcribes legislative sessions, committee hearings, and
-          press conferences in real time. When a keyword you care about is spoken
-          or published, you get an alert — typically within 60 seconds.
+        <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] max-w-3xl">
+          You used to choose between watching hours of committee feeds live or waiting days for Hansard to publish.
+          Now every legislative session, committee hearing, and press conference across Canada is transcribed
+          live and searchable the moment words leave a minister&apos;s mouth. If your issue comes up at 2:14pm in
+          a committee room, you&apos;ll know by 2:15.
         </p>
-        <ul className="list-disc list-outside pl-5 text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] space-y-2">
-          <li>
-            Real-time speech-to-text transcription across the House of Commons,
-            provincial legislatures, committee rooms, and government YouTube streams
-          </li>
-          <li>
-            Keyword alerts within 60 seconds of a word or phrase being spoken or
-            published in a scraped document
-          </li>
-          <li>
-            Configurable per channel: choose real-time alerts, a daily digest, or
-            no notifications
-          </li>
-          <li>
-            12+ federal committee rooms monitored simultaneously, plus Ontario
-            legislature, Quebec National Assembly, and more
-          </li>
-          <li>
-            Filter alerts by jurisdiction so you only see what matters to your
-            regions
-          </li>
-        </ul>
       </section>
 
-      {/* Module 2: AI Briefings */}
-      <section className="px-5 lg:px-10 xl:px-24 py-12 md:py-16 bg-background-light-gray">
+      {/* 2. AI Briefings */}
+      <section className="px-5 lg:px-10 xl:px-24 py-16 md:py-20 bg-background-light-gray">
         <h2 className="font-bold text-3xl md:text-[2.125rem] md:leading-[3rem] leading-[2.625rem] text-black-text mb-5">
-          AI briefings
+          Your morning briefing, written overnight
         </h2>
-        <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] mb-6">
-          Every morning, PoliAlerts reads everything that happened yesterday across
-          your selected regions — transcripts, documents, press releases — and
-          writes you a personalized briefing. It tells you what changed overnight
-          and suggests new topics you should be watching.
+        <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] max-w-3xl">
+          Imagine having an analyst who reads every transcript, every filing, and every press release
+          from the previous day — then writes you a one-page summary of what matters, tailored to your
+          issues and your jurisdictions. It&apos;s in your inbox by 7am. That&apos;s what this is.
         </p>
-        <ul className="list-disc list-outside pl-5 text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] space-y-2">
-          <li>
-            Personalized daily briefings based on your interests and selected
-            jurisdictions
-          </li>
-          <li>
-            Reads all activity from the previous day: sessions, filings, press
-            releases, regulatory changes
-          </li>
-          <li>
-            Suggests new topics you may want to add to your watch list
-          </li>
-          <li>
-            Configurable frequency, tone, delivery time, and timezone
-          </li>
-          <li>
-            Delivered via email and viewable in the dashboard
-          </li>
-        </ul>
       </section>
 
-      {/* Module 3: Document Intelligence */}
-      <section className="px-5 lg:px-10 xl:px-24 py-12 md:py-16">
+      {/* 3. Document Monitoring */}
+      <section className="px-5 lg:px-10 xl:px-24 py-16 md:py-20">
         <h2 className="font-bold text-3xl md:text-[2.125rem] md:leading-[3rem] leading-[2.625rem] text-black-text mb-5">
-          Document intelligence
+          Every filing, the moment it drops
         </h2>
-        <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] mb-6">
-          45+ automated scrapers run across 7 jurisdictions on schedules as
-          frequent as every 5 minutes. Press releases, bills, gazettes, regulatory
-          filings, consultations, Orders in Council — all captured, indexed, and
-          matched against your keywords automatically.
+        <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] max-w-3xl">
+          Bills, regulatory changes, gazette postings, Orders in Council, consultations — the government
+          publishes constantly, across dozens of sources and jurisdictions. You&apos;ll know the moment something
+          relevant is published, not when a colleague forwards it to you next week. Stop refreshing government
+          websites. Let the alerts come to you.
         </p>
-        <ul className="list-disc list-outside pl-5 text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] space-y-2">
-          <li>
-            45+ scrapers covering federal, Ontario, Quebec, British Columbia,
-            Alberta, Toronto, and York Region
-          </li>
-          <li>
-            High-priority sources like canada.ca and news.ontario.ca checked every
-            5 minutes
-          </li>
-          <li>
-            Covers press releases, bills, gazettes, regulatory registry filings,
-            environmental registry postings, consultations, and Orders in Council
-          </li>
-          <li>
-            Every document is deduplicated, indexed for full-text search, and run
-            through keyword matching
-          </li>
-        </ul>
       </section>
 
-      {/* Module 4: Media Monitoring */}
-      <section className="px-5 lg:px-10 xl:px-24 py-12 md:py-16 bg-background-light-gray">
+      {/* 4. Media Monitoring */}
+      <section className="px-5 lg:px-10 xl:px-24 py-16 md:py-20 bg-background-light-gray">
         <h2 className="font-bold text-3xl md:text-[2.125rem] md:leading-[3rem] leading-[2.625rem] text-black-text mb-5">
-          Media monitoring
+          Know the reporters before they call you
         </h2>
-        <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] mb-6">
-          Track Canadian news coverage across 22+ outlets. See which reporters are
-          covering your issues, who they are quoting, and how stories spread across
-          the media landscape.
+        <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] max-w-3xl">
+          See which journalists are covering your issues, who they&apos;re quoting, and what stories are
+          gaining traction — before the interview request lands. Track coverage across Canada&apos;s major
+          outlets with reporter profiles, beat history, and story clustering that shows you the full
+          media landscape at a glance. Be ready for the call instead of caught off guard by it.
         </p>
-        <ul className="list-disc list-outside pl-5 text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] space-y-2">
-          <li>
-            22+ Canadian news outlets tracked with articles searchable by outlet,
-            topic, region, and article type
-          </li>
-          <li>
-            2,000+ reporter profiles with beat tracking, outlet history, and
-            contact information
-          </li>
-          <li>
-            Topic tracking across 45 categories with daily volume charts and
-            trending entities
-          </li>
-          <li>
-            Story clusters that group related articles across outlets so you can
-            see coverage breadth at a glance
-          </li>
-          <li>
-            Wire detection distinguishes original reporting from republished wire
-            service content
-          </li>
-          <li>
-            Entity tracking shows who is being mentioned, quoted, and covered —
-            and by whom
-          </li>
-        </ul>
       </section>
 
-      {/* Module 5: Government Contacts */}
-      <section className="px-5 lg:px-10 xl:px-24 py-12 md:py-16">
+      {/* 5. Government Contacts */}
+      <section className="px-5 lg:px-10 xl:px-24 py-16 md:py-20">
         <h2 className="font-bold text-3xl md:text-[2.125rem] md:leading-[3rem] leading-[2.625rem] text-black-text mb-5">
-          Government contacts
+          The contact book you wish existed
         </h2>
-        <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] mb-6">
-          An updated database of Canadian government officials with direct contact
-          information — MPs, Senators, provincial legislators, political staff, and
-          ministerial offices.
+        <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] max-w-3xl">
+          Every MP, senator, provincial legislator, political staffer, and ministerial office — email,
+          phone, social. Searchable. Updated. Stop asking around for someone&apos;s direct line or digging
+          through parliamentary websites. The person you need to reach is one search away.
         </p>
-        <ul className="list-disc list-outside pl-5 text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] space-y-2">
-          <li>
-            Email, phone, and social media profiles for elected officials and
-            political staff
-          </li>
-          <li>
-            Searchable and filterable by party, riding, chamber, and institution
-          </li>
-          <li>
-            Sourced from official parliamentary rosters and refreshed regularly
-          </li>
-          <li>
-            Integrated into enriched person profiles alongside lobbying and ethics
-            data
-          </li>
-        </ul>
       </section>
 
-      {/* Module 6: Lobbying & Stakeholder Intelligence */}
-      <section className="px-5 lg:px-10 xl:px-24 py-12 md:py-16 bg-background-light-gray">
+      {/* 6. Lobbying Intelligence */}
+      <section className="px-5 lg:px-10 xl:px-24 py-16 md:py-20 bg-background-light-gray">
         <h2 className="font-bold text-3xl md:text-[2.125rem] md:leading-[3rem] leading-[2.625rem] text-black-text mb-5">
-          Lobbying and stakeholder intelligence
+          See who has access
         </h2>
-        <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] mb-6">
-          See who is lobbying whom, on what subjects, and how the stakeholder
-          landscape around any topic is structured. Built from federal lobbyist
-          registry filings and ethics disclosures.
+        <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] max-w-3xl">
+          Enter a topic and see who&apos;s lobbying on it, which officials they&apos;re meeting with, and what
+          they&apos;re asking for. Stakeholder maps show you the full landscape you&apos;re operating in — who
+          the players are, who has the ear of the decision-makers, and where you stand relative to the
+          competition. This is the intelligence you need to walk into a meeting prepared.
         </p>
-        <ul className="list-disc list-outside pl-5 text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] space-y-2">
-          <li>
-            Lobbying registry filings and ethics disclosures searchable by subject,
-            official, or organization
-          </li>
-          <li>
-            Stakeholder maps: enter a topic and see the full landscape of
-            decision-makers, lobbyists, and organizations involved
-          </li>
-          <li>
-            Company and GR firm profiles showing lobbying activity, clients, and
-            target officials
-          </li>
-          <li>
-            Gift disclosures database for public office holders
-          </li>
-        </ul>
       </section>
 
-      {/* Module 7: Full-Text Search Archive */}
-      <section className="px-5 lg:px-10 xl:px-24 py-12 md:py-16">
+      {/* 7. Search Archive */}
+      <section className="px-5 lg:px-10 xl:px-24 py-16 md:py-20">
         <h2 className="font-bold text-3xl md:text-[2.125rem] md:leading-[3rem] leading-[2.625rem] text-black-text mb-5">
-          Full-text search archive
+          Find anything ever said
         </h2>
-        <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] mb-6">
-          Every transcript segment and scraped document PoliAlerts has ever
-          captured is searchable. Find the exact moment something was said, or
-          locate a regulatory filing from months ago.
+        <p className="text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] max-w-3xl">
+          Every transcript, every document, fully searchable. That thing the minister said in committee
+          last March? Find it in seconds. The regulatory filing your client asked about from six months
+          ago? It&apos;s there. Your entire institutional memory, indexed and instant.
         </p>
-        <ul className="list-disc list-outside pl-5 text-sm md:text-base text-clifford md:leading-7 leading-[1.625rem] space-y-2">
-          <li>
-            Search across every transcript and document in the archive
-          </li>
-          <li>
-            Filter by jurisdiction, date range, and source type
-          </li>
-          <li>
-            Results include matched text with surrounding context, source
-            attribution, and direct links to full transcripts or documents
-          </li>
-        </ul>
       </section>
 
       {/* CTA Desktop */}
