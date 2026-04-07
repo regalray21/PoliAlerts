@@ -11,16 +11,18 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      {/* Desktop Hero */}
-      <div className="hidden lg:block relative">
-        <div className="absolute top-0 text-white-text top-[25%] lg:top-[50%] z-30 2xl:w-[48%] xl:w-[64%] w-[70%] px-5 lg:px-10 xl:pl-24 xl:pr-[4.75rem]">
-          <h1 className="text-5xl leading-[4rem] font-bold">
+      {/* Desktop Hero — Fix #1: height constraint, Fix #2: gradient overlay */}
+      <div className="hidden lg:block relative h-[85vh] max-h-[800px] overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent z-10" />
+        <div className="absolute top-[50%] -translate-y-1/2 z-20 2xl:w-[48%] xl:w-[64%] w-[70%] px-5 lg:px-10 xl:pl-24 xl:pr-[4.75rem]">
+          <h1 className="text-5xl leading-[4rem] font-bold text-white-text">
             Know what government is saying — minutes after they say it
           </h1>
-          <p className="text-[1.375rem] leading-[2.125rem] my-5">
+          <p className="text-[1.375rem] leading-[2.125rem] my-5 text-white-text">
             The only platform that monitors every legislative session, hearing,
             and regulatory filing across Canada — and briefs you on what matters.
           </p>
+          {/* Fix #7: transparent border on default to prevent hover jump */}
           <div className="flex gap-4 mt-2">
             <a
               className="bg-blue-button text-white-text text-base font-semibold px-8 py-4 rounded-full hover:bg-blue-hover duration-500"
@@ -31,7 +33,7 @@ export default function HomePage() {
               Book a demo
             </a>
             <a
-              className="bg-white text-blue-hover text-base font-semibold px-8 py-4 rounded-full hover:bg-transparent hover:text-white-text hover:border hover:border-white-text duration-500"
+              className="bg-white text-blue-hover text-base font-semibold px-8 py-4 rounded-full border border-transparent hover:bg-transparent hover:text-white-text hover:border-white-text duration-500"
               href="https://my.polialerts.com/login"
             >
               Start monitoring
@@ -46,22 +48,24 @@ export default function HomePage() {
         />
       </div>
 
-      {/* Mobile Hero */}
-      <div className="relative md:h-[38rem] h-full w-full lg:hidden block">
+      {/* Mobile Hero — Fix #2: gradient overlay */}
+      <div className="relative md:h-[38rem] h-[28rem] w-full lg:hidden block overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="h-full w-full object-cover"
           src="/PoliAlerts/assets/home/Hero-mobile.png"
           alt="Parliament buildings"
         />
-        <div className="absolute inset-0 flex flex-col justify-center px-5">
-          <h1 className="text-[2.375rem] text-white font-bold leading-[3.25rem] md:text-5xl md:leading-[4rem]">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
+        <div className="absolute inset-0 flex flex-col justify-end px-5 pb-10">
+          <h1 className="text-[2.375rem] text-white-text font-bold leading-[3.25rem] md:text-5xl md:leading-[4rem]">
             Know what government is saying — minutes after they say it
           </h1>
-          <p className="text-lg my-5 text-white leading-[1.875rem]">
+          <p className="text-lg my-5 text-white-text leading-[1.875rem]">
             The only platform that monitors every session, hearing, and filing
             across Canada.
           </p>
+          {/* Fix #7: transparent border default */}
           <div className="flex gap-3">
             <a
               className="bg-blue-button text-white-text text-base font-semibold px-6 py-3 rounded-full hover:bg-blue-hover duration-500"
@@ -72,7 +76,7 @@ export default function HomePage() {
               Book a demo
             </a>
             <a
-              className="bg-white text-blue-hover text-base font-semibold px-6 py-3 rounded-full"
+              className="bg-white text-blue-hover text-base font-semibold px-6 py-3 rounded-full border border-transparent"
               href="https://my.polialerts.com/login"
             >
               Start monitoring
@@ -81,8 +85,8 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* What you're missing */}
-      <section className="md:my-16 my-8 h-full px-5 lg:px-10 xl:px-24">
+      {/* What you're missing — Fix #9: consistent spacing */}
+      <section className="py-16 lg:py-24 px-5 lg:px-10 xl:px-24">
         <h2 className="font-bold text-3xl md:text-[2.125rem] md:leading-[3rem] leading-[2.625rem] mb-5 text-black-text">
           While you were in that meeting, three things happened
         </h2>
@@ -94,10 +98,11 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* Feature icons section — preserves original layout */}
-      <section className="flex md:flex-row flex-col-reverse gap-5 items-center font-bold">
-        <div className="md:w-[48%] w-full rounded-full md:my-0 my-10">
-          <div className="rounded-r-full w-[90%]">
+      {/* Feature icons section — Fix #4: icon dimensions, Fix #8: overflow-hidden, Fix #9: spacing */}
+      <section className="flex md:flex-row flex-col-reverse gap-5 items-center font-bold py-16 lg:py-24">
+        <div className="md:w-[48%] w-full md:my-0 my-10">
+          {/* Fix #8: overflow-hidden for rounding */}
+          <div className="rounded-r-full w-[90%] overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/PoliAlerts/assets/home/crowd-moving-in-government-building.png"
@@ -106,8 +111,9 @@ export default function HomePage() {
           </div>
         </div>
         <div className="md:w-[45%] w-full flex flex-col gap-5 md:my-10 my-0 md:px-0 px-5">
+          {/* Fix #4: base dimensions + flex-shrink-0 on all icon containers */}
           <section className="flex gap-4 items-center">
-            <div className="p-4 md:w-[60px] flex justify-center items-center rounded-full bg-background-light-gray md:h-[60px]">
+            <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] flex-shrink-0 flex justify-center items-center rounded-full bg-background-light-gray">
               <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.97 33.08">
                 <g>
                   <polygon fill="#2468cd" points="18.52 16.46 18.52 8.79 14.61 8.79 14.61 14.16 14.61 18.55 14.61 18.69 19.78 21.74 21.76 18.37 18.52 16.46" />
@@ -123,7 +129,7 @@ export default function HomePage() {
             </h3>
           </section>
           <section className="flex gap-4 items-center">
-            <div className="p-4 md:w-[60px] flex justify-center items-center rounded-full bg-background-light-gray md:h-[60px]">
+            <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] flex-shrink-0 flex justify-center items-center rounded-full bg-background-light-gray">
               <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 49">
                 <g>
                   <polygon fill="#2468cd" points="18 3.5 18 0 7.58 0 7.58 3.5 0 3.5 0 9.5 7.58 9.5 7.58 13 18 13 18 9.5 47 9.5 47 3.5 18 3.5" />
@@ -137,7 +143,7 @@ export default function HomePage() {
             </h3>
           </section>
           <section className="flex gap-4 items-center">
-            <div className="p-4 md:w-[60px] flex justify-center items-center rounded-full bg-background-light-gray md:h-[60px]">
+            <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] flex-shrink-0 flex justify-center items-center rounded-full bg-background-light-gray">
               <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.46 50.87">
                 <g>
                   <path fill="#2468cd" d="m53.92,17.38L29.76.63c-1.22-.84-2.85-.84-4.07,0L1.54,17.38c-1.29.89-1.84,2.5-1.37,4,.47,1.5,1.84,2.5,3.4,2.5h5.16v21H1.73v6h52v-6h-7v-21h5.16c1.57,0,2.94-1.01,3.4-2.5.47-1.5-.08-3.1-1.37-4ZM27.73,6.52l16.38,11.35H11.35L27.73,6.52Zm2.33,17.35v21h-4.67v-21h4.67Zm-15.33,0h4.67v21h-4.67v-21Zm26,21h-4.67v-21h4.67v21Z" />
@@ -149,7 +155,7 @@ export default function HomePage() {
             </h3>
           </section>
           <section className="flex gap-4 items-center">
-            <div className="p-5 md:w-[60px] flex justify-center items-center rounded-full bg-background-light-gray md:h-[60px]">
+            <div className="w-[48px] h-[48px] md:w-[60px] md:h-[60px] flex-shrink-0 flex justify-center items-center rounded-full bg-background-light-gray">
               <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.55 24.87">
                 <g>
                   <path fill="#2468cd" d="m2.93,2.01C4.02.91,5.85,0,7.86,0c1.83,0,3.29.55,4.57,1.83,1.1,1.28,1.83,2.93,1.83,4.57,0,3.47-2.56,6.03-5.85,6.4-1.28.18-2.56,0-3.47-.55.37,2.74,1.65,6.95,7.68,10.24l-1.65,2.38C4.57,21.94,0,16.28,0,9.87c0-3.66,1.1-5.85,2.93-7.86h0Zm18.29,0C22.31.91,24.14,0,26.15,0c1.83,0,3.47.55,4.57,1.83s1.83,2.93,1.83,4.57c0,3.47-2.56,6.03-5.85,6.4-1.28.18-2.56,0-3.47-.55.37,2.74,1.65,6.95,7.68,10.24l-1.65,2.38c-6.4-2.93-10.97-8.59-10.97-15,0-3.66,1.1-5.85,2.93-7.86h0Z" />
@@ -162,7 +168,7 @@ export default function HomePage() {
           </section>
 
           <section className="group flex gap-5 items-center mt-4">
-            <div className="w-[10px] flex justify-center items-center rounded-full bg-blue-button group-hover:bg-blue-hover group-hover:translate-x-[0.9rem] duration-500 h-[10px]"></div>
+            <div className="w-[10px] h-[10px] flex-shrink-0 rounded-full bg-blue-button group-hover:bg-blue-hover group-hover:translate-x-[0.9rem] duration-500"></div>
             <div className="text-blue-button text-base font-semibold">
               <Link
                 className="underline group-hover:no-underline group-hover:text-blue-hover duration-500"
@@ -175,19 +181,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* WEB VERSION — The full picture */}
-      <section className="h-fit lg:h-[70rem]">
-        <div className="relative lg:block hidden mt-[33rem] w-full 2xl:h-fit lg:h-screen">
-          <div className="bg-background-light-gray -top-[25rem] absolute rounded-r-full w-full h-fit z-20 py-24">
-            <div className="flex gap-1 w-full items-center">
-              <div className="flex w-[80%] justify-center items-start h-full flex-col gap-3 px-5 lg:px-10 xl:pl-24 xl:pr-[4.75rem]">
-                <h4 className="text-base text-clifford font-semibold tracking-widest leading-7">
+      {/* Fix #3: Rebuilt "Beyond Monitoring" as normal flow layout — no absolute positioning */}
+      <section className="hidden lg:block">
+        <div className="bg-background-light-gray">
+          <div className="max-w-7xl mx-auto px-5 lg:px-10 xl:px-24 py-24">
+            <div className="flex gap-12 items-start">
+              <div className="w-1/2">
+                <h4 className="text-base text-clifford font-semibold tracking-widest leading-7 mb-3">
                   BEYOND MONITORING
                 </h4>
-                <h2 className="text-black-text font-bold md:text-[2.125rem] leading-[3rem]">
+                <h2 className="text-black-text font-bold text-[2.125rem] leading-[3rem] mb-5">
                   Your overnight analyst, <br /> your media radar, your contact book
                 </h2>
-                <p className="text-clifford text-base leading-7 2xl:w-[80%]">
+                <p className="text-clifford text-base leading-7 mb-6">
                   PoliAlerts doesn&apos;t just alert you — it synthesizes. Every
                   morning you get a personalized briefing that reads everything
                   from yesterday and tells you what matters. Track which reporters
@@ -197,97 +203,94 @@ export default function HomePage() {
                   decision-makers.
                 </p>
                 <section className="group flex gap-3 items-center">
-                  <div className="w-[10px] flex justify-center items-center rounded-full bg-blue-button group-hover:bg-blue-hover group-hover:translate-x-[0.6rem] duration-500 h-[10px]"></div>
-                  <div>
-                    <Link
-                      className="underline group-hover:no-underline group-hover:text-blue-hover text-base text-blue-button font-semibold duration-500"
-                      href="/features"
-                    >
-                      Explore all modules
-                    </Link>
-                  </div>
+                  <div className="w-[10px] h-[10px] flex-shrink-0 rounded-full bg-blue-button group-hover:bg-blue-hover group-hover:translate-x-[0.6rem] duration-500"></div>
+                  <Link
+                    className="underline group-hover:no-underline group-hover:text-blue-hover text-base text-blue-button font-semibold duration-500"
+                    href="/features"
+                  >
+                    Explore all modules
+                  </Link>
                 </section>
               </div>
-              <div className="relative w-[70%] 2xl:w-[60%]">
-                <div className="absolute -top-[20rem]">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    className="2xl:w-[86%] w-[83%] h-[80%]"
-                    src="/PoliAlerts/assets/home/rows-of-chairs-in-legislature.png"
-                    alt="Legislature chamber"
-                  />
-                </div>
+              <div className="w-1/2 -mt-32">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  className="rounded-lg w-full"
+                  src="/PoliAlerts/assets/home/rows-of-chairs-in-legislature.png"
+                  alt="Legislature chamber"
+                />
               </div>
             </div>
-            <div className="mt-24 py-5">
-              <div className="grid grid-cols-3 xl:w-fit 2xl:w-full 2xl:gap-5 px-5 lg:px-10 xl:pl-24 xl:pr-24 2xl:pr-36">
-                <div className="2xl:w-full xl:w-[90%] w-[18.5rem]">
-                  <h3 className="text-[1.625rem] leading-[2.375rem] font-bold mb-4 text-black-text">
-                    Media intelligence
-                  </h3>
-                  <p className="text-clifford text-base leading-7">
-                    Track 22+ Canadian news outlets. See which reporters cover
-                    your issues, who they quote, and what stories are gaining
-                    traction — before they become crises.
-                  </p>
-                </div>
-                <div className="2xl:w-full xl:w-[90%] w-[18.5rem]">
-                  <h3 className="text-[1.625rem] leading-[2.375rem] font-bold mb-4 text-black-text">
-                    Lobbying &amp; stakeholder data
-                  </h3>
-                  <p className="text-clifford text-base leading-7">
-                    Enter a topic and see the full landscape — who&apos;s lobbying,
-                    which officials they&apos;re meeting, registry filings,
-                    ethics disclosures, and gift reports. All searchable.
-                  </p>
-                </div>
-                <div className="2xl:w-full xl:w-[90%] w-[18.5rem] break-words text-left">
-                  <h3 className="text-[1.625rem] leading-[2.375rem] font-bold mb-4 text-black-text">
-                    Government contacts
-                  </h3>
-                  <p className="text-clifford text-base leading-7">
-                    Updated directory of MPs, senators, provincial legislators,
-                    and political staff. Email, phone, social — searchable by
-                    party, riding, or institution.
-                  </p>
-                </div>
+            {/* Fix #5: grid handles sizing, no fixed pixel widths */}
+            <div className="grid grid-cols-3 gap-8 mt-16">
+              <div>
+                <h3 className="text-[1.625rem] leading-[2.375rem] font-bold mb-4 text-black-text">
+                  Media intelligence
+                </h3>
+                <p className="text-clifford text-base leading-7">
+                  Track 22+ Canadian news outlets. See which reporters cover
+                  your issues, who they quote, and what stories are gaining
+                  traction — before they become crises.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-[1.625rem] leading-[2.375rem] font-bold mb-4 text-black-text">
+                  Lobbying &amp; stakeholder data
+                </h3>
+                <p className="text-clifford text-base leading-7">
+                  Enter a topic and see the full landscape — who&apos;s lobbying,
+                  which officials they&apos;re meeting, registry filings,
+                  ethics disclosures, and gift reports. All searchable.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-[1.625rem] leading-[2.375rem] font-bold mb-4 text-black-text">
+                  Government contacts
+                </h3>
+                <p className="text-clifford text-base leading-7">
+                  Updated directory of MPs, senators, provincial legislators,
+                  and political staff. Email, phone, social — searchable by
+                  party, riding, or institution.
+                </p>
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="relative">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              className="z-10 h-[70rem] object-cover w-full"
-              src="/PoliAlerts/assets/home/architectural-close-up-view-of-building.png"
-              alt="Building architecture"
-            />
-            <div className="left-[40%] my-4 absolute 2xl:top-[55%] xl:top-[55%] lg:top-[60%] z-50">
-              <div className="lg:w-[90%] 2xl:w-[70%]">
-                <h1 className="text-5xl leading-[4rem] font-bold text-white-text">
-                  Stop refreshing Hansard. Start getting briefed.
-                </h1>
-                <p className="text-base leading-7 my-5 text-white-text">
-                  Join the GR and PA professionals who never get blindsided by
-                  what government is doing.
-                </p>
-                <a
-                  className="bg-white py-4 text-base text-blue-hover font-semibold px-8 rounded-full hover:bg-transparent hover:border hover:border-white-text hover:text-white-text inline-block"
-                  href="https://calendly.com/polialerts-info/polialerts"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Book a demo
-                </a>
-              </div>
+        {/* Fix #6: CTA centered properly, not left-[40%] */}
+        <div className="relative h-[32rem] overflow-hidden">
+          <div className="absolute inset-0 bg-black/40 z-10" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            className="w-full h-full object-cover"
+            src="/PoliAlerts/assets/home/architectural-close-up-view-of-building.png"
+            alt="Building architecture"
+          />
+          <div className="absolute inset-0 flex items-center justify-center text-center px-10 z-20">
+            <div className="max-w-2xl">
+              <h2 className="text-5xl leading-[4rem] font-bold text-white-text mb-5">
+                Stop refreshing Hansard. Start getting briefed.
+              </h2>
+              <p className="text-base leading-7 mb-8 text-white-text">
+                Join the GR and PA professionals who never get blindsided by
+                what government is doing.
+              </p>
+              <a
+                className="bg-white py-4 text-base text-blue-hover font-semibold px-8 rounded-full border border-transparent hover:bg-transparent hover:text-white-text hover:border-white-text inline-block duration-500"
+                href="https://calendly.com/polialerts-info/polialerts"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book a demo
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* MOBILE VERSION — Beyond monitoring + CTA */}
-      <section className="mobile lg:hidden block mt-5">
-        <div className="flex flex-col px-5 py-8 gap-5 bg-background-light-gray">
+      {/* MOBILE VERSION — Beyond monitoring + CTA — Fix #9: consistent spacing */}
+      <section className="lg:hidden block">
+        <div className="flex flex-col px-5 py-16 gap-5 bg-background-light-gray">
           <h4 className="text-xs leading-6 text-clifford font-semibold tracking-widest">
             BEYOND MONITORING
           </h4>
@@ -302,19 +305,17 @@ export default function HomePage() {
           </p>
 
           <section className="group flex gap-3 items-center">
-            <div className="w-[10px] flex justify-center items-center rounded-full bg-blue-button group-hover:bg-blue-hover group-hover:translate-x-[0.6rem] duration-500 h-[10px]"></div>
-            <div>
-              <Link
-                className="underline group-hover:no-underline group-hover:text-blue-hover duration-500 text-blue-button text-base font-semibold"
-                href="/features"
-              >
-                Explore all modules
-              </Link>
-            </div>
+            <div className="w-[10px] h-[10px] flex-shrink-0 rounded-full bg-blue-button group-hover:bg-blue-hover group-hover:translate-x-[0.6rem] duration-500"></div>
+            <Link
+              className="underline group-hover:no-underline group-hover:text-blue-hover duration-500 text-blue-button text-base font-semibold"
+              href="/features"
+            >
+              Explore all modules
+            </Link>
           </section>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            className="my-4 w-[90%] h-[90%] md:w-[50%] md:h-[50%] mx-auto"
+            className="my-4 w-[90%] md:w-[50%] mx-auto rounded-lg"
             src="/PoliAlerts/assets/home/rows-of-chairs-in-legislature.png"
             alt="Legislature chamber"
           />
@@ -348,16 +349,17 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Mobile bottom CTA */}
-        <div className="relative md:h-[38rem] h-full w-full lg:hidden block">
+        {/* Mobile bottom CTA — Fix #2: gradient overlay */}
+        <div className="relative md:h-[38rem] h-[28rem] w-full overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="h-full w-full object-cover"
             src="/PoliAlerts/assets/home/Bottom-mobile.png"
             alt="City skyline"
           />
-          <div className="absolute inset-0 flex flex-col justify-center px-5">
-            <h1 className="text-[2.375rem] text-white font-bold leading-[3.25rem] md:text-5xl md:leading-[4rem]">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
+          <div className="absolute inset-0 flex flex-col justify-end px-5 pb-10">
+            <h1 className="text-[2.375rem] text-white-text font-bold leading-[3.25rem] md:text-5xl md:leading-[4rem]">
               Stop refreshing Hansard. Start getting briefed.
             </h1>
             <p className="text-lg my-5 text-white-text leading-[1.875rem]">
@@ -365,7 +367,7 @@ export default function HomePage() {
               is doing.
             </p>
             <a
-              className="text-black-text text-base font-semibold bg-white w-fit py-4 px-8 rounded-full hover:bg-transparent hover:border hover:border-white hover:text-white inline-block"
+              className="text-black-text text-base font-semibold bg-white w-fit py-4 px-8 rounded-full border border-transparent hover:bg-transparent hover:border-white hover:text-white inline-block duration-500"
               href="https://calendly.com/polialerts-info/polialerts"
               target="_blank"
               rel="noopener noreferrer"
