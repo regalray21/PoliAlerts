@@ -15,8 +15,8 @@ export default function DemoBookingPage() {
       <HeroBanner
         desktopImage="/PoliAlerts/assets/bookademo/toronto-city-hall-buildings-from-below.png"
         mobileImage="/PoliAlerts/assets/mobile-banners/polialerts-buildings-mobile-banner.jpg"
-        subtitle="Book a demo"
-        title="Speak to an expert"
+        subtitle="Get started"
+        title="See PoliAlerts in action"
         desktopTextWidth="2xl:w-[55%] w-[60%]"
       />
 

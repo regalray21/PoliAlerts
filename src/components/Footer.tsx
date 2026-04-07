@@ -51,7 +51,7 @@ function LinkedInIcon({ size = 30 }: { size?: number }) {
 function DesktopFooter() {
   return (
     <div className="relative lg:block hidden bg-clifford text-white-text px-5 lg:px-10 xl:px-24">
-      <footer className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center items-start py-14">
+      <footer className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center items-start py-14">
         <div className="flex flex-col gap-7 -mt-4">
           <LogoWhite />
           <p className="text-sm text-gray-text leading-6">
@@ -64,6 +64,7 @@ function DesktopFooter() {
           >
             <LinkedInIcon size={30} />
           </a>
+          <p className="text-sm text-gray-text">info@polialerts.com</p>
         </div>
         <div className="border-t border-white border-opacity-15">
           <ul className="flex flex-col py-5 gap-3">
@@ -82,18 +83,18 @@ function DesktopFooter() {
             </li>
             <li>
               <Link
-                href="/support"
-                className="text-sm text-gray-text underline hover:no-underline"
-              >
-                Support
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="/coverage"
                 className="text-sm text-gray-text underline hover:no-underline"
               >
                 Coverage
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/who-is-it-for"
+                className="text-sm text-gray-text underline hover:no-underline"
+              >
+                Who It&apos;s For
               </Link>
             </li>
           </ul>
@@ -122,18 +123,6 @@ function DesktopFooter() {
               </Link>
             </li>
           </ul>
-        </div>
-        <div className="border-t border-white border-opacity-15">
-          <p className="pt-5 uppercase font-semibold text-base tracking-widest">
-            Subscribe to our newsletter
-          </p>
-          <p className="pt-4 pb-4 text-sm text-gray-text">
-            Learn about product updates, feature releases and all other
-            PoliAlerts news.
-          </p>
-          <button className="text-base font-semibold bg-blue-button py-2 px-8 rounded-full hover:bg-white-text hover:text-blue-hover">
-            <Link href="/newsletter">Sign up</Link>
-          </button>
         </div>
       </footer>
       <hr className="w-[95%] border-white mb-5 border-opacity-15" />
@@ -188,18 +177,18 @@ function MobileFooter() {
                   </li>
                   <li>
                     <Link
-                      href="/support"
-                      className="text-xs leading-5 text-gray-text underline hover:no-underline"
-                    >
-                      Support
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
                       href="/coverage"
                       className="text-xs leading-5 text-gray-text underline hover:no-underline"
                     >
                       Coverage
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/who-is-it-for"
+                      className="text-xs leading-5 text-gray-text underline hover:no-underline"
+                    >
+                      Who It&apos;s For
                     </Link>
                   </li>
                 </ul>
@@ -232,21 +221,7 @@ function MobileFooter() {
           </div>
           <hr className="block mx-auto my-5 border-gray-line" />
           <div>
-            <h3 className="text-sm leading-6 tracking-widest text-white-text font-semibold mb-5">
-              SUBSCRIBE TO OUR NEWSLETTER
-            </h3>
-            <p className="text-xs text-gray-text leading-5">
-              Learn about product updates, feature releases and all other
-              PoliAlerts news.
-            </p>
-            <button className="my-8 w-fit h-fit">
-              <Link
-                href="/newsletter"
-                className="bg-blue-button hover:bg-white hover:text-blue-hover text-white-text px-8 py-3 rounded-full text-base font-semibold"
-              >
-                Sign up
-              </Link>
-            </button>
+            <p className="text-xs text-gray-text leading-5">info@polialerts.com</p>
           </div>
         </div>
 

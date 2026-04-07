@@ -9,18 +9,14 @@ import LockIcon from "./LockIcon";
 const NAV_LINKS = [
   { label: "Features", href: "/features" },
   { label: "Coverage", href: "/coverage" },
-  { label: "Pricing", href: "/pricing" },
+  { label: "Who It's For", href: "/who-is-it-for" },
 ];
 
 const SUBPAGE_PATHS = [
   "/features",
   "/coverage",
-  "/pricing",
   "/who-is-it-for",
-  "/faqs",
   "/demo-booking",
-  "/support",
-  "/newsletter",
 ];
 
 const SIMPLE_PATHS = ["/login", "/privacy-policy", "/terms-of-use"];
